@@ -1,5 +1,5 @@
 # odin-recipes
-A recipe created in html for the Odin project
+A recipe web site I created in html for the Odin project
 
 Introduction:
 
