@@ -7,20 +7,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Recipes</title>
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-    <h1>Welcome to Odin Recipes</h1>
-    <img src="./images/recipe.jpg" width="600px" alt="My Recipes">
+    <header id="header"></header>
+    <h1 id="title">Welcome to Odin Recipes</h1>
+    <img class="recipe" src="./images/recipe.jpg" alt="My Recipes">
 
     <p>Discover a variety of delicious recipes to satisfy your culinary cravings.</p>
 
-    <h2>Recipes</h2>
-    <ul>
-        <li><a href="./recipes/lasagna.html">Lasagna</a></li>
-        <li><a href="./recipes/broccoliCheddarSoup.html">Broccoli and Cheddar Cheese Soup</a></li>
-        <li><a href="./recipes/chickenPotPieSoup.html">Chicken Pot Pie Soup</a></li>
-    </ul>
+    <h2 id="title">Recipes</h2>
+    <nav class="recipe-list">
+        <ul>
+            <li><a class="recipe-list" href="./recipes/lasagna.html">Lasagna</a></li>
+            <li><a class="recipe-list" href="./recipes/broccoliCheddarSoup.html">Broccoli and Cheddar Cheese Soup</a>
+            </li>
+            <li><a class="recipe-list" href="./recipes/chickenPotPieSoup.html">Chicken Pot Pie Soup</a></li>
+        </ul>
+    </nav>
 </body>
 
 </html>

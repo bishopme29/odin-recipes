@@ -1,0 +1,136 @@
+body {
+    text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightblue
+}
+
+/* HEADER & NAVBAR */
+#header {
+    background-color: #19a572;
+    /* Sets the background color of the header */
+    position: fixed;
+    /* Navbar always at top */
+    top: 0;
+    /* Positions the navbar at the top of the page */
+    left: 0;
+    /* Aligns the navbar to the left edge of the page */
+    width: 100%;
+    /* Makes the navbar span the full width of the page */
+    display: flex;
+    /* Enables Flexbox layout for the navbar */
+    justify-content: flex-end;
+    /* Aligns the navigation items to the right end of the navbar */
+}
+
+#title {
+    text-align: center;
+    /* Centers the title text */
+    padding-top: 50px;
+    /* Adds padding around the title for better spacing */
+}
+
+img {
+    width: 75%;
+    /* Sets the width of the recipe image to 50% of its container */
+    height: auto;
+    /* Maintains the aspect ratio of the image */
+    margin-top: 20px;
+    /* Adds space above the image */
+}
+
+.recipe-list {
+    display: flex;
+    /* Enables Flexbox layout for the recipe list */
+    flex-direction: column;
+    /* Aligns items in a column */
+    text-align: left;
+    /* Centers the recipe links horizontally */
+    color: darkblue;
+}
+
+/* Navigation Bar */
+#nav-list {
+    display: flex;
+    /* Allows Flexbox Usage */
+    flex-direction: row;
+    /* Aligns items in a row */
+}
+
+li {
+    list-style: none;
+    /* Removes default list styling */
+}
+
+a {
+    color: blue;
+    /* Sets link color to white */
+    text-decoration: none;
+    /* Removes underline from links */
+    font-size: 2em;
+    /* Increases font size for better visibility */
+    padding: 1rem 1rem;
+    /* Adds padding around links for better clickability */
+    margin: -1;
+    /* Removes default margin */
+}
+
+.nav-list:hover {
+    background-color: rgb(115, 115, 224);
+    /* Changes background color on hover for better user interaction */
+}
+
+p {
+    font-size: 1.5em;
+    /* Increases font size for better readability */
+    margin-top: 20px;
+    /* Adds space above the description */
+    text-align: justify;
+    /* Justifies the text for a cleaner look */
+    padding: 0 50px;
+    /* Adds horizontal padding for better readability */
+}
+
+#ingredients,
+#instructions {
+    text-align: left;
+    /* Aligns the ingredients list to the left */
+    margin: 20px auto;
+    /* Adds vertical margin and centers the list horizontally */
+    width: 80%;
+    /* Sets the width of the ingredients list */
+}
+
+#instructions a {
+    color: blue;
+    /* Sets link color to blue */
+    font-size: 1em;
+    /* Increases font size for better visibility */
+    text-decoration: none;
+    /* Removes underline from links */
+    padding: 0.5rem 0rem;
+    /* Adds padding around links for better clickability */
+}
+
+#instructions li {
+    counter-increment: step;
+}
+
+#instructions li::before {
+    content: "Step " counter(step) ": ";
+    font-weight: bold;
+}
+
+footer {
+    background-color: #19a572;
+    /* Sets the background color of the footer */
+    text-align: center;
+    font-size: 0.75em;
+    padding: 0.1rem 0;
+}
+
+footer a {
+    font-size: inherit;
+    color: linen;
+    text-decoration: none;
+}
